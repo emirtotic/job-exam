@@ -64,8 +64,8 @@ public class ExerciseController {
     }
 
     @PutMapping("/record/update/{code}")
-    public ResponseEntity<ExerciseDTO> updateUser(@PathVariable(name = "code") String code,
-                                                  @RequestBody ExerciseDTO exerciseDTO) {
+    public ResponseEntity<ExerciseDTO> updateRecord(@PathVariable(name = "code") String code,
+                                                    @RequestBody ExerciseDTO exerciseDTO) {
         return new ResponseEntity<>(exerciseService.updateRecord(code, exerciseDTO), HttpStatus.OK);
     }
 
