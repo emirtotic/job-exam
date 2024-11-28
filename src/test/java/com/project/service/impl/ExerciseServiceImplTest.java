@@ -2,7 +2,6 @@ package com.project.service.impl;
 
 import com.project.dto.ExerciseDTO;
 import com.project.entity.Exercise;
-import com.project.exception.RecordNotFoundException;
 import com.project.mapper.ExerciseMapper;
 import com.project.repository.ExerciseRepository;
 import com.project.service.ExerciseService;
@@ -17,7 +16,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class ExerciseServiceImplTest {
